@@ -6,7 +6,7 @@ let shouldResetDisplay = false;
 
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
-    const value = button.textContent;
+    const value = button.textContent.trim();
 
     if (button.classList.contains("number")) {
       if (shouldResetDisplay) {
@@ -40,6 +40,7 @@ buttons.forEach((button) => {
     if (button.classList.contains("clear")) {
       display.value = "";
       expression = "";
+      shouldResetDisplay = false;
     }
 
     if (button.classList.contains("equals")) {
