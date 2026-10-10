@@ -51,22 +51,34 @@ body {
 
 .btn:hover {
   opacity: 0.9;
+  transform: scale(1.05);
+}
+
+.btn:active {
+  transform: scale(0.95);
 }
 
 .operator {
   background: #fbbf24;
   color: #111827;
+  font-weight: bold;
 }
 
 .clear {
   background: #ef4444;
   color: white;
+  font-weight: bold;
 }
 
 .equals {
   background: #10b981;
   color: white;
   grid-row: span 2;
+  font-weight: bold;
+}
+
+.decimal {
+  background: #e5e7eb;
 }
 
 .zero {
